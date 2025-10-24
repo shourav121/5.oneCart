@@ -5,7 +5,7 @@ import axios from 'axios'
 export const userDataContext = createContext()
 function UserContext({children}) {
     let [userData,setUserData] = useState("")
-    let {serverUrl} = useContext(authDataContext)
+    let {serverUrl} = useContext(AuthDataContext)
 
 
    const getCurrentUser = async () => {
