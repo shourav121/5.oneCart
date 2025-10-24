@@ -13,7 +13,7 @@ function PlaceOrder() {
     let [method,setMethod] = useState('cod')
     let navigate = useNavigate()
     const {cartItem , setCartItem , getCartAmount , delivery_fee , products } = useContext(shopDataContext)
-    let {serverUrl} = useContext(authDataContext)
+    let {serverUrl} = useContext(AuthDataContext)
     let [loading ,setLoading] = useState(false)
 
     let [formData,setFormData] = useState({
